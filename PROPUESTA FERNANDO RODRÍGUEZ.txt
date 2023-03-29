@@ -1,0 +1,5 @@
+		PROPUESTA DEL PROYECTO SHU
+Es realizar unprogram con una base de datos para ayudar a 
+tener un mejor control con la atencón a los ciudadanos cuando
+tengan algún accidente o molestia en general en la que sea 
+necesario asistir a algíún hospital
