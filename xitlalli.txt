@@ -1,3 +1,19 @@
-git fetch origin main
-git merge origin/main
-Para actualizar proyecto local :)
+1._ git fetch -git merge actualizar proyecto local
+
+2.- git fetch origin main acrualizar mi rama con la principal
+    git merge origin/main
+
+3._ Modifico añado o elimino
+
+4._ git fetch origin main
+    git merge origin/main 
+    Para actualizar proyecto local :)
+
+5._ git push para ver los últimos cambios
+    git add . para agregar todo
+    git commit –m para empaquetar lo que voy a subir 
+    git push para subir 
+
+
+
+
