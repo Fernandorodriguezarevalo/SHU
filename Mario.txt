@@ -2,3 +2,16 @@ git fetch origin main
 git merge origin/main
 
 Actualizar Proyecto y bajar las actualizaciones 
+<<<<<<< HEAD
+
+-------------------------
+git status		|
+
+git add.		|
+
+git commit -m "MENSAJE"	>  Subir cambios a mi rama desde 
+
+git push		|   git bash 
+-------------------------
+=======
+>>>>>>> refs/remotes/origin/MMR110505
