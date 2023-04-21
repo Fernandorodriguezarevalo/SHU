@@ -1,4 +1,28 @@
 Actualizar proyecto local: 
-
 Git fetch origin main
 git merge origin/main
+
+------------------------------------------------------------
+PASO 1
+Actualizar proyecto local desde mi rama 
+git fetch
+git merge
+
+PASO 2
+Actualizar mi rama con la principal
+git fetch origin main
+git merge origin/main
+
+PASO 3
+Modifico, añado o elimino
+
+PASO 4
+Subir cambios a mi rama gir bash
+gir status 
+git add . 
+git commit -m "mensaje"
+git push 
+
+PASO 5
+Contribuir con mis cambios a mi rama
+pull request
