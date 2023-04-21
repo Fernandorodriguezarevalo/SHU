@@ -1,0 +1,137 @@
+    public static void main(String[] args) {
+        Scanner scaner = new Scanner(System.in);
+
+        double num1, num2;
+        int Vcontrol;
+        System.out.println("Ingrese dos valores por favor;");
+
+        System.out.println("Ingrese el numer1");
+        num1 = scaner.nextInt();
+        System.out.println("Ingrese el numero2");
+        num2 = scaner.nextInt();
+
+        System.out.println("Que operacion desea hacer");
+
+        System.out.println("1. SUMA");
+        System.out.println("2. RESTA");
+        System.out.println("3. MULTIPLICACION");
+        System.out.println("4. DIVICION");
+        System.out.println("5. NUMERO MAYOR");
+        Vcontrol = scaner.nextInt();
+        switch (Vcontrol) {
+            case 1:
+                double resultadosuma = SumaDosNumeros(num1, num2);
+                System.out.println("resultado de la suma es: " + resultadosuma);
+                break;
+
+            case 2:
+                double resultadoresta = RestaDosNumeros(num1, num2);
+                System.out.println("resultado de la suma es: " + resultadoresta);
+                break;
+
+            case 3:
+                double resultadomulti = MultiDosNumeros(num1, num2);
+                System.out.println("resultado de la suma es: " + resultadomulti);
+                break;
+
+            case 4:
+                double resultadodiv = DivDosNumeros(num1, num2);
+                System.out.println("resultado de la suma es: " + resultadodiv);
+                break;
+
+            case 5:
+                double NumerosMayor = numeroMayor(num1, num2);
+                System.out.println("Numero mayor: " + NumerosMayor);
+                break;
+
+
+            case 6:
+                double NumerosMenor = numeroMenor(num1, num2);
+                System.out.println("Numero menor: " + NumerosMenor);
+                break;
+
+            case 7:
+                String divresiduo = Divresiduo(num1, num2);
+                System.out.println(divresiduo);
+                break;
+
+
+        }
+
+
+    }
+
+    public static double SumaDosNumeros(double num1, double num2) {
+        double suma = num1 + num2;
+        return suma;
+
+
+    }
+
+    public static double RestaDosNumeros(double num1, double num2) {
+        double resta = num1 + num2;
+        return resta;
+    }
+
+    public static double MultiDosNumeros(double num1, double num2) {
+        double multi = num1 * num2;
+        return multi;
+
+
+    }
+
+    public static double DivDosNumeros(double num1, double num2) {
+        double div = num1 / num2;
+        return div;
+
+
+    }
+
+    public static double numeroMayor(double num1, double num2) {
+        double numeromayor;
+        if (num1 > num2) {
+            numeromayor = num1;
+
+        } else {
+            numeromayor = num2;
+        }
+        return numeromayor;
+    }
+
+    public static double numeroMenor(double num1, double num2) {
+        double numeromenor;
+        if (num1 < num2) {
+            numeromenor = num1;
+
+        } else {
+            numeromenor = num2;
+        }
+        return numeromenor;
+    }
+
+    public static String Divresiduo(double num1, double num2) {
+        String divresiduo;
+        if (num1 % num2 == 0) {
+            divresiduo = "Sin residuo";
+
+        } else {
+            divresiduo = "Con residuo";
+        }
+        return divresiduo;
+
+
+    }
+
+
+  public static void main(String[] args) {
+             Marcador plumoncitoRojo=new Marcador();
+             plumoncitoRojo.Dibujar();
+             Carro Car=new Carro();
+             Car.Acelerar();
+             Tenis Calzado=new Tenis();
+             Calzado.Suela();
+             Empresa Empresa=new Empresa();
+             Empresa.Antireflejantes();
+
+
+    }

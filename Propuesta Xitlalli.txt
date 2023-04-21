@@ -1,0 +1,2 @@
+Crear un programa que sirva para dar diferentes tipos de servivcios de salud haciendo enfasis en la atención hospitalaria
+ para hacer más eficiente el trabajo del personal de salud y que no se saturen los hospitales, clinicas, etc. 
