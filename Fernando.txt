@@ -1,3 +1,10 @@
 Actualizar Proyecto Local: 
 git fetch origin main
 git merge origin/main
+
+Para subir cambios a mi rama desde Git Bash:
+
+git Status
+git add .
+git commit -m "Mensaje"
+git push
