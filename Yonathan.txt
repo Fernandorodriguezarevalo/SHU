@@ -1,0 +1,4 @@
+Actualizar proyecto local: 
+
+Git fetch origin main
+git merge origin/main
