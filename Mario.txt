@@ -2,16 +2,19 @@ git fetch origin main
 git merge origin/main
 
 Actualizar Proyecto y bajar las actualizaciones 
-<<<<<<< HEAD
+----1. Actualizar Proyecto Local desde mi Rama----
+git fetch 
+git merge
+---------2. Actualizar mi Rama con la Principal-----------
+git fetch origin main
+git merge origin/main
+-----------3------------
+Modifico,Añado o Elimino
+----4. Subir cambios a mi Rama desde git Bash------
+git status
+git add .
+git commit -m "Mensaje"
+git push
+-----5. Contribuir con mis cambios a mi Rama------
+pull request
 
--------------------------
-git status		|
-
-git add.		|
-
-git commit -m "MENSAJE"	>  Subir cambios a mi rama desde 
-
-git push		|   git bash 
--------------------------
-=======
->>>>>>> refs/remotes/origin/MMR110505
