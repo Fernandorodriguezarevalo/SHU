@@ -16,6 +16,10 @@ git merge origin/main
 PASO 3
 Modifico, añado o elimino
 
+
+Una vez que terminemos los cambios q hemos hecho ahora
+si hacemos el siguiente paso
+
 PASO 4
 Subir cambios a mi rama gir bash
 gir status 
@@ -23,6 +27,6 @@ git add .
 git commit -m "mensaje"
 git push 
 
-PASO 5
+PASO 5--> nos vamos a git 
 Contribuir con mis cambios a mi rama
 pull request
