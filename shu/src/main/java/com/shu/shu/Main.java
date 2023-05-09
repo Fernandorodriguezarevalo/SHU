@@ -18,4 +18,13 @@ public class Main {
     public String Despedida(){
         return "¡Adios!";
     }
+
+    @GetMapping("/")
+    public String Saludos(){
+        return "Hola Clase";
+    }
+    @GetMapping("/Despedida")
+    public String Despedida(){
+        return "Adios!!";
+    }
 }
