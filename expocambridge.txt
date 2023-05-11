@@ -1,0 +1,5 @@
+dao:
+Entrance(EntanceDao, EntranceDaoimp)
+controllers:
+employee fernando
+Entrance
