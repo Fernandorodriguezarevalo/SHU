@@ -28,6 +28,6 @@ public class EntranceDaoimp implements EntranceDao{
 
     @Override
     public void setEntrance(Entrance entrance) { //Metodo que recibe un usuario añadae usuario
-        entityManager.merge(Entrance); //Instruccion que une a la base de datos el usuraio que recibe el metodo
+        entityManager.merge(entrance); //Instruccion que une a la base de datos el usuraio que recibe el metodo
     }
 }
