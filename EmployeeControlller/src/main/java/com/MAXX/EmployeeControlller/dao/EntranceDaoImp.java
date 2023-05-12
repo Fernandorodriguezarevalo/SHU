@@ -7,7 +7,7 @@ import jakarta.transaction.Transactional;
 
 import java.util.List;
 
-public class EntranceDaoimp implements EntranceDao{
+public class EntranceDaoImp implements EntranceDao{
     @PersistenceContext //Voy a utilizar SQL
     EntityManager entityManager; // Es una variable manejadora de DB
 
