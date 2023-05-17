@@ -4,8 +4,12 @@ import com.MAXX.EmployeeControlller.models.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
+@Repository
+@Transactional
 
 public class EmployeeDaoImp implements EmployeeDao {
     @PersistenceContext //Voy a utilizar SQL
@@ -15,7 +19,7 @@ public class EmployeeDaoImp implements EmployeeDao {
     @Override //Especifico que mi metodo esta ejecutandose esperando interaccion
     @Transactional//Especifico q mi metodo es una transaccion de datos
     public List<Employee> getEmployees() { //Metodo que devuelbe todos los usuarios en forma de lista
-        String query = "FROM Employee WHERE 1";//Guardo en texto una cosulta sql para mi DB, MI CONSULTA SELECCIONADA TODOS LOS USUARIOS
+        String query = "FROM Employee";//Guardo en texto una cosulta sql para mi DB, MI CONSULTA SELECCIONADA TODOS LOS USUARIOS
         return entityManager.createQuery(query).getResultList();//Retorno la respuesta de mi Consulta de sql
     }
 
