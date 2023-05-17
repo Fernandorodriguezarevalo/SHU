@@ -28,3 +28,4 @@ public class Entrance {
     @Getter @Setter @Column(name = "hora_salida")
     private String hora_salida;
 }
+ 
