@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface EntranceDao {
 
-    List<Entrance> getEntrance(); //Especifico que debe existir el metodo "gertUsuario"
+    List<Entrance> getEntrances(); //Especifico que debe existir el metodo "gertUsuario"
 
     Entrance getEntrance(Long id); //Especifico que debe existir el metodo "get Entance" y recibe un parametro llamdo id
 

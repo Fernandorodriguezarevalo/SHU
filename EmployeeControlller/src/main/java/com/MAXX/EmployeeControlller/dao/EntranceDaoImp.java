@@ -4,9 +4,12 @@ import com.MAXX.EmployeeControlller.models.Entrance;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
+@Transactional
 public class EntranceDaoImp implements EntranceDao{
     @PersistenceContext //Voy a utilizar SQL
     EntityManager entityManager; // Es una variable manejadora de DB
@@ -14,8 +17,8 @@ public class EntranceDaoImp implements EntranceDao{
     @Override //Especifico que mi metodo esta ejecutandose esperando interaccion
     @Transactional //Especifico q mi metodo es una transaccion de datos
 
-    public List<Entrance> getEntrance() { //Metodo que devuelbe todos los usuarios en forma de lista
-        String query = "FROM Entrance where 1"; //Guardo en texto una cosulta sql para mi DB, MI CONSULTA SELECCIONADA TODOS LOS USUARIOS
+    public List<Entrance> getEntrances() { //Metodo que devuelbe todos los usuarios en forma de lista
+        String query = "FROM Entrance"; //Guardo en texto una cosulta sql para mi DB, MI CONSULTA SELECCIONADA TODOS LOS USUARIOS
         return entityManager.createQuery(query).getResultList(); //Retorno la respuesta de mi Consulta de sql
     }
 
