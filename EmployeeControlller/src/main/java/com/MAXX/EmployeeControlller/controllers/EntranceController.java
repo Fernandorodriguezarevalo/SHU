@@ -24,7 +24,8 @@ public class EntranceController {
 
     }
     @RequestMapping(value = "control/administracion/entrances/{id}")
-    public Entrance getEntrance(@PathVariable Long id){
+    public Entrance getEntrance(@PathVariable Long id)
+    {
         return entranceDao.getEntrance(id);
     }
 }

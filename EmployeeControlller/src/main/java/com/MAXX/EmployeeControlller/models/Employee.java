@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import org.springframework.stereotype.Repository;
 
 @Entity //Declarar la clase como identidad
 @Table(name = "Employees")//Especificar la tabla a la que hace referencia
