@@ -10,7 +10,7 @@ public interface EmployeeDao {
 
     Employee getEmployee(Long id);//Especifico que debe existir el metodo "getEmployee" y recibe un parametro llamdo id
 
-    void setEmployee(Employee employee);//Especifico que debe de exixistir el metodo "setEmployee" y recibe un parametro tipo de Employee de nombre employee
+    void setEmployee(Employee employee);//Especifico que debe de exixistir el metodo "setEmployee" y recibe un parametro tipo de Employee de nombre employ
 
 
 }
