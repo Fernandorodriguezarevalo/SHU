@@ -4,10 +4,7 @@ package com.MAXX.EmployeeControlller.controllers;
 import com.MAXX.EmployeeControlller.dao.EmployeeDao;
 import com.MAXX.EmployeeControlller.models.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,10 +19,18 @@ public class EmployeeController {
         return employeeDao.getEmployees();
     }
 
-    @RequestMapping(value = "0{id}")
+    @RequestMapping(value = "control/administracion/Employee/{id}", method = RequestMethod.GET)
     public Employee getEmployee(@PathVariable Long id){
         return employeeDao.getEmployee(id);
     }
 
+    @RequestMapping(value = "control/administracion/Employee/{id}", method = RequestMethod.DELETE)
+    public void deleteEmployee(@PathVariable Long id){
+        employeeDao.deleteEmployee(id);
+    }
+    @RequestMapping(value = "control/administracion/Employees", method = RequestMethod.POST)
+    public String registerEmployee(@RequestBody Employee employee){
+        return employeeDao.registerEmployee(employee);
+    }
+
 }
- 
