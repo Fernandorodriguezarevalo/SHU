@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Entity //Declarar la clase como identidad
 @Table(name = "Employees")//Especificar la tabla a la que hace referencia
 @ToString @EqualsAndHashCode // Darle formato de salida a un consulta
@@ -35,6 +34,9 @@ public class Employee {
 
     @Getter @Setter @Column (name = "Domicilio")
     private  String Domicilio;
+
+    @Getter @Setter @Column (name = "Password")
+    private String Password;
 
 
 }

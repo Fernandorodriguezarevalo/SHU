@@ -33,4 +33,25 @@ public class EntranceDaoImp implements EntranceDao{
     public void setEntrance(Entrance entrance) { //Metodo que recibe un usuario añadae usuario
         entityManager.merge(entrance); //Instruccion que une a la base de datos el usuraio que recibe el metodo
     }
+
+    @Override
+    public void deleteEntrances(Long idEmployee) {
+        String query = "FROM Entrance where id_employee ="+idEmployee;
+        List<Entrance> deleteEntrancesId = entityManager.createQuery(query).getResultList();
+        for (Entrance entrance:
+             deleteEntrancesId) {
+            entityManager.remove(entrance);
+        }
+    }
+
+    @Override
+    public void registerEntrance(Entrance entrance) {
+        entityManager.merge(entrance);
+    }
+
+    @Override
+    public List<Entrance> getEntrancesByEmployees(Long id_employee) {
+        String query = "FROM Entrance where id_employee = "+id_employee;
+        return entityManager.createQuery(query).getResultList();
+    }
 }
