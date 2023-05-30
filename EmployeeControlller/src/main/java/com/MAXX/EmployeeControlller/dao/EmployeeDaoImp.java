@@ -35,5 +35,5 @@ public class EmployeeDaoImp implements EmployeeDao {
     public void setEmployee(Employee employee) {  //Metodo que recibe un usuario añadae usuario
         entityManager.merge(employee); //Instruccion que une a la base de datos el usuraio que recibe el metodo
     }
-    
+
 }

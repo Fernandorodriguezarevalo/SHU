@@ -22,9 +22,10 @@ public class EmployeeController {
         return employeeDao.getEmployees();
     }
 
-    @RequestMapping(value = "control/administracion/Employee/{id}")
+    @RequestMapping(value = "0{id}")
     public Employee getEmployee(@PathVariable Long id){
         return employeeDao.getEmployee(id);
     }
 
 }
+ 
