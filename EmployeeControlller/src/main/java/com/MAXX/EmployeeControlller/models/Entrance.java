@@ -10,7 +10,7 @@ import lombok.ToString;
 @Entity // Declarar clase como indentidad
 @Table(name = "entrance")// Especificar la tabla a la que hace referrencia
 @ToString @EqualsAndHashCode //Darle formato de salidaa una consulta en forma de texto
-public class Entrance {
+public class               Entrance {
     @Id // Se especifica qe habla de un id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Especifico que es auto incrementable y se habla ede un id
     @Getter @Setter @Column(name = "id")//Busca la propiedad en la base de datos se declara que la propiedad tendra getter y setter y hace referancvia a la columna id
